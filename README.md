@@ -129,13 +129,15 @@ endmodule
 ![net2](https://user-images.githubusercontent.com/91146503/194052447-a2a38619-950a-4e3a-a789-8ca689a0ed15.jpg)
 
 ## NgSpice Plots
-![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
-![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
+![clk](https://user-images.githubusercontent.com/91146503/194052959-f0d94687-6e75-4fd8-9ef1-173d8769538f.jpg)
+![J](https://user-images.githubusercontent.com/91146503/194053047-c23e5c25-dacd-4027-88d6-0a1c766899f8.jpg)
+![k](https://user-images.githubusercontent.com/91146503/194053052-1d6894b4-8953-49f8-bb0a-2125e3dbd2f1.jpg)
+![q](https://user-images.githubusercontent.com/91146503/194053065-0e0f762c-fa91-4b28-815f-3a2a81e9b2a3.jpg)
+![qb](https://user-images.githubusercontent.com/91146503/194053067-6c7cb3c8-8c6a-400e-81ec-c444d651daf1.jpg)
 
-![image](https://user-images.githubusercontent.com/58599984/156439624-353c14ac-4216-4aa7-8207-64f4c287b2b7.png)
-![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
-## GAW Plots
-![image](https://user-images.githubusercontent.com/58599984/156439535-edb78fc7-a6e6-4178-864a-7cea5ea37e23.png)
+## Combined Plot
+![waveform](https://user-images.githubusercontent.com/91146503/194053145-92342747-913e-42d7-ad87-dc0555476d97.jpg)
+
 ## Steps to run generate NgVeri Model
 1. Open eSim
 2. Run NgVeri-Makerchip 
