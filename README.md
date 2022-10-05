@@ -35,9 +35,10 @@ going to use for this conversion is the SR Flip Flop will be
 made of analog block and the gates which provide input to
 the SR Flip Flop will be made of digital block.
 ## Reference Circuit Diagram
-CMOS Implementation of SR Flip Flop
+CMOS Implementation of SR Flip Flop & Block Diagram for conversion of SR Flip Flop to JK Flip Flop
+
 ![cmos_Sr](https://user-images.githubusercontent.com/91146503/194048029-e65b6e23-4e7b-40be-91b2-8d9491febe3e.jpg)
-Block Diagram for conversion of SR Flip Flop to JK Flip Flop
+
 ![logic](https://user-images.githubusercontent.com/91146503/194048134-dc6ea247-8634-4a74-a04d-eadd7cbb0115.jpg)
 ## Reference Waveform
 ![image](https://user-images.githubusercontent.com/58599984/152688402-29877a15-deb3-4dee-9bcc-2313851182de.png)
