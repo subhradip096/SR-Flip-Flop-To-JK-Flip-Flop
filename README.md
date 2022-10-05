@@ -2,7 +2,6 @@
 # SR-Flip-Flop-To-JK-Flip-Flop
 - [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
-- [Reference Waveform](#reference-waveform)
 - [Circuit Details](#circuit-details)
 - [Truth Table](#truth-table)
 - [Software Used](#software-used)
@@ -40,28 +39,24 @@ CMOS Implementation of SR Flip Flop & Block Diagram for conversion of SR Flip Fl
 ![cmos_Sr](https://user-images.githubusercontent.com/91146503/194048029-e65b6e23-4e7b-40be-91b2-8d9491febe3e.jpg)
 
 ![logic](https://user-images.githubusercontent.com/91146503/194048134-dc6ea247-8634-4a74-a04d-eadd7cbb0115.jpg)
-## Reference Waveform
-![image](https://user-images.githubusercontent.com/58599984/152688402-29877a15-deb3-4dee-9bcc-2313851182de.png)
 ## Circuit Details
-As shown in the figure we have two cross coupled
-circuits of PMOS logic and NMOS logic.
-</br>
-On the PMOS logic we are getting the output as XOR
-while in the NMOS block we get the output as XNOR.
-</br>
-The transistors M4 and M3 behave as a pass transistor
-and pass the output of M1, M2 and M5, M6
-respectively.
+As shown in the figure we can see that the the actual input of the SR Flip
+Flop are S and R, the external inputs of the SR Flip Flops are
+J and K. We will see a total of 8 combinations as input out of
+which some values are don’t care in S and R. We are able to
+draw this circuit by simplifying the K-Map.
+The K-Map is derived from the the truth table of JK Flip Flop
+and excitation table of SR Flip Flop.
 </br>
 
-The advantage of the above circuit is that it uses only
-6 transistors and gives both outputs of XOR and
-XNOR while the general circuit uses 8 transistors with
-only one output either XOR or XNOR.
+In Fig.3 we see the implementation of the SR Flip Flop
+using CMOS.This part of our circuit will be the analog circuitry block. The circuit designed is a sky130 circuit as
+shown in the CMOS implementation.
 </br>
-This way it consumes less space and less power and is
-efficient in many ways.
-</br>
+The digital block implementation using Verilog Hardware
+Description Language will be the used to design the AND gate
+which feeds input to the the S and R input of the CMOS based
+SR Flip Flop.
 ## Truth Table
 
 | Input A  | Input B | Output XOR  | Output XNOR |
