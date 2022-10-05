@@ -1,0 +1,38 @@
+* /home/20ec3038/eSim-Workspace/conversionff/conversionff.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed 05 Oct 2022 10:23:46 AM IST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC3  Net-_SC3-Pad1_ Net-_SC1-Pad2_ Net-_SC10-Pad1_ Net-_SC10-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC5  Net-_SC10-Pad1_ CLK Net-_SC3-Pad1_ Net-_SC10-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC8  Net-_SC10-Pad3_ CLK Net-_SC10-Pad1_ Net-_SC10-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC10  Net-_SC10-Pad1_ Net-_SC10-Pad2_ Net-_SC10-Pad3_ Net-_SC10-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC4  Net-_SC3-Pad1_ QB Q Net-_SC3-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC9  QB Q Net-_SC10-Pad3_ Net-_SC10-Pad3_ sky130_fd_pr__pfet_01v8_lvt		
+SC1  Q Net-_SC1-Pad2_ Net-_SC1-Pad3_ Net-_SC1-Pad3_ sky130_fd_pr__nfet_01v8_lvt		
+SC2  Net-_SC1-Pad3_ CLK GND GND sky130_fd_pr__nfet_01v8_lvt		
+SC6  GND QB Q GND sky130_fd_pr__nfet_01v8_lvt		
+SC7  QB Q GND GND sky130_fd_pr__nfet_01v8_lvt		
+SC11  Net-_SC11-Pad1_ Net-_SC10-Pad2_ QB Net-_SC11-Pad1_ sky130_fd_pr__nfet_01v8_lvt		
+SC12  GND CLK Net-_SC11-Pad1_ GND sky130_fd_pr__nfet_01v8_lvt		
+v1  Net-_SC10-Pad1_ GND DC		
+v2  k GND pulse		
+v3  CLK GND pulse		
+v4  J GND pulse		
+U2  CLK plot_v1		
+U4  QB plot_v1		
+scmode1  SKY130mode		
+U3  Q plot_v1		
+U5  k Q Net-_U1-Pad2_ Net-_U1-Pad1_ adc_bridge_2		
+U6  Net-_U1-Pad3_ Net-_SC1-Pad2_ dac_bridge_1		
+U8  QB J Net-_U8-Pad3_ Net-_U8-Pad4_ adc_bridge_2		
+U7  Net-_U7-Pad1_ Net-_SC10-Pad2_ dac_bridge_1		
+U10  k plot_v1		
+U11  J plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ subhradip_conversionff		
+U9  Net-_U8-Pad3_ Net-_U8-Pad4_ Net-_U7-Pad1_ subhradip_conversionff		
+
+.end

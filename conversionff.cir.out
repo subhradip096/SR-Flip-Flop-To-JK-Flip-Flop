@@ -1,0 +1,65 @@
+* /home/20ec3038/esim-workspace/conversionff/conversionff.cir
+
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__inductors.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.lib "/usr/share/local/sky130_fd_pr/models/sky130.lib.spice" tt
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__r+c.model.spice"
+.include "/usr/share/local/sky130_fd_pr/models/sky130_fd_pr__model__linear.model.spice"
+xsc3 net-_sc3-pad1_ net-_sc1-pad2_ net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__pfet_01v8_lvt 
+xsc5 net-_sc10-pad1_ clk net-_sc3-pad1_ net-_sc10-pad1_ sky130_fd_pr__pfet_01v8_lvt 
+xsc8 net-_sc10-pad3_ clk net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__pfet_01v8_lvt 
+xsc10 net-_sc10-pad1_ net-_sc10-pad2_ net-_sc10-pad3_ net-_sc10-pad1_ sky130_fd_pr__pfet_01v8_lvt 
+xsc4 net-_sc3-pad1_ qb q net-_sc3-pad1_ sky130_fd_pr__pfet_01v8_lvt 
+xsc9 qb q net-_sc10-pad3_ net-_sc10-pad3_ sky130_fd_pr__pfet_01v8_lvt 
+xsc1 q net-_sc1-pad2_ net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__nfet_01v8_lvt 
+xsc2 net-_sc1-pad3_ clk gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc6 gnd qb q gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc7 qb q gnd gnd sky130_fd_pr__nfet_01v8_lvt 
+xsc11 net-_sc11-pad1_ net-_sc10-pad2_ qb net-_sc11-pad1_ sky130_fd_pr__nfet_01v8_lvt 
+xsc12 gnd clk net-_sc11-pad1_ gnd sky130_fd_pr__nfet_01v8_lvt 
+v1 net-_sc10-pad1_ gnd  dc 1.8
+v2  k gnd pulse(0 1.8 0.1n 0.1n 0.1n 50n 200n)
+v3  clk gnd pulse(0 1.8 0.1n 0.1n 0.1nn 17n 50n)
+v4  j gnd pulse(1.8 0 0.1n 0.1n 0.1n 50n 100n)
+* u2  clk plot_v1
+* u4  qb plot_v1
+* s c m o d e
+* u3  q plot_v1
+* u5  k q net-_u1-pad2_ net-_u1-pad1_ adc_bridge_2
+* u6  net-_u1-pad3_ net-_sc1-pad2_ dac_bridge_1
+* u8  qb j net-_u8-pad3_ net-_u8-pad4_ adc_bridge_2
+* u7  net-_u7-pad1_ net-_sc10-pad2_ dac_bridge_1
+* u10  k plot_v1
+* u11  j plot_v1
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ subhradip_conversionff
+* u9  net-_u8-pad3_ net-_u8-pad4_ net-_u7-pad1_ subhradip_conversionff
+a1 [k q ] [net-_u1-pad2_ net-_u1-pad1_ ] u5
+a2 [net-_u1-pad3_ ] [net-_sc1-pad2_ ] u6
+a3 [qb j ] [net-_u8-pad3_ net-_u8-pad4_ ] u8
+a4 [net-_u7-pad1_ ] [net-_sc10-pad2_ ] u7
+a5 [net-_u1-pad1_ ] [net-_u1-pad2_ ] [net-_u1-pad3_ ] u1
+a6 [net-_u8-pad3_ ] [net-_u8-pad4_ ] [net-_u7-pad1_ ] u9
+* Schematic Name:                             adc_bridge_2, NgSpice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_2, NgSpice Name: adc_bridge
+.model u8 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u7 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             subhradip_conversionff, NgSpice Name: subhradip_conversionff
+.model u1 subhradip_conversionff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             subhradip_conversionff, NgSpice Name: subhradip_conversionff
+.model u9 subhradip_conversionff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.1e-06 1e-06 0e-06
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(clk) v(qb)+6 v(q)+12 v(k)+24 v(j)+30
+.endc
+.end
