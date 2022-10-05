@@ -47,7 +47,7 @@ The K-Map is derived from the the truth table of JK Flip Flop
 and excitation table of SR Flip Flop.
 </br>
 
-In Fig.3 we see the implementation of the SR Flip Flop
+In the figure as shown above we see the implementation of the SR Flip Flop
 using CMOS.This part of our circuit will be the analog circuitry block. The circuit designed is a sky130 circuit as
 shown in the CMOS implementation.
 </br>
