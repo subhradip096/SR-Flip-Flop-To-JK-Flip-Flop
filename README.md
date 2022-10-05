@@ -3,7 +3,7 @@
 - [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
 - [Circuit Details](#circuit-details)
-- [Truth Table for the Digital AND Gate](#truth-table-for-digital-and-gate)
+- [Truth Table for Digital AND Gate](#truth-table-for-digital-and-gate)
 - [Software Used](#software-used)
   * [eSim](#esim)
   * [NgSpice](#ngspice)
@@ -58,7 +58,7 @@ The digital block implementation using Verilog Hardware
 Description Language will be the used to design the AND gate
 which feeds input to the the S and R input of the CMOS based
 SR Flip Flop.
-## Truth Table for the Digital AND Gate
+## Truth Table for Digital AND Gate
 
 | Input A  | Input B | Output AND  | 
 | ------------- | ------------- | ------------- | 
