@@ -3,7 +3,7 @@
 - [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
 - [Circuit Details](#circuit-details)
-- [Truth Table for the Digital AND Gate](#truth-table)
+- [Truth Table for the Digital AND Gate](#truth-table-for-digital-and-gate)
 - [Software Used](#software-used)
   * [eSim](#esim)
   * [NgSpice](#ngspice)
