@@ -87,8 +87,14 @@ The following is the schematic in eSim:
 ![circuit diagram](https://user-images.githubusercontent.com/91146503/194050253-7f0bb068-057a-424c-a7a3-7c62fca8a62c.jpg)
 
 ## Verilog Code
-![verilog code](https://user-images.githubusercontent.com/91146503/194050494-1d59071e-5b7e-4aea-860f-2dfee556957b.jpg)
+```
+module subhradip_conversionff(c,a,b);
+input a,b;
+output c;
+and (c,a,b);
+endmodule
 
+```
 ## Makerchip
 ```
 \TLV_version 1d: tl-x.org
