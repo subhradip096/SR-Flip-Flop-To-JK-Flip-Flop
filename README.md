@@ -125,7 +125,9 @@ endmodule
 ![verilog_waveform](https://user-images.githubusercontent.com/91146503/194051339-87323842-97bf-4b1f-a8b9-39c1d208e6d9.jpg)
 
 ## Netlists
-![image](https://user-images.githubusercontent.com/58599984/156440985-0a983124-b5ad-4b60-b83f-7adf0e7c36fb.png)
+![net1](https://user-images.githubusercontent.com/91146503/194052425-f3bb7521-3a6a-4d0d-b27b-662408a65171.jpg)
+![net2](https://user-images.githubusercontent.com/91146503/194052447-a2a38619-950a-4e3a-a789-8ca689a0ed15.jpg)
+
 ## NgSpice Plots
 ![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
 ![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
