@@ -3,7 +3,7 @@
 - [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
 - [Circuit Details](#circuit-details)
-- [Truth Table](#truth-table)
+- [Truth Table for the Digital AND Gate](#truth-table)
 - [Software Used](#software-used)
   * [eSim](#esim)
   * [NgSpice](#ngspice)
@@ -53,18 +53,19 @@ In Fig.3 we see the implementation of the SR Flip Flop
 using CMOS.This part of our circuit will be the analog circuitry block. The circuit designed is a sky130 circuit as
 shown in the CMOS implementation.
 </br>
+
 The digital block implementation using Verilog Hardware
 Description Language will be the used to design the AND gate
 which feeds input to the the S and R input of the CMOS based
 SR Flip Flop.
-## Truth Table
+## Truth Table for the Digital AND Gate
 
-| Input A  | Input B | Output XOR  | Output XNOR |
-| ------------- | ------------- | ------------- | ------------- |
-| 0  | 0 | 0  | 1 |
-| 0  | 1 | 1| 0|
-| 1  | 0 |1|0|
-| 1 | 1 |0|1|
+| Input A  | Input B | Output AND  | 
+| ------------- | ------------- | ------------- | 
+| 0  | 0 | 0  |
+| 0  | 1 | 0| 
+| 1  | 0 |0|
+| 1 | 1 |1|
 ## Software Used
 ### eSim
 It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD.
